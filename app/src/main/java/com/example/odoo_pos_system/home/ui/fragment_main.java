@@ -1,4 +1,4 @@
-package com.example.odoo_pos_system.profile.ui;
+package com.example.odoo_pos_system.home.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,17 +9,15 @@ import androidx.fragment.app.Fragment;
 
 import com.example.odoo_pos_system.R;
 
-public class activity_profile extends Fragment {
+public class fragment_main extends Fragment {
 
-    public activity_profile(){
+    public fragment_main(){
 
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState){
-
-        
-        return inflater.inflate(R.layout.fragment_activity_profile,container, false);
+        return inflater.inflate(R.layout.fragment_main,container, false);
     }
 }

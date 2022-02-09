@@ -6,9 +6,9 @@
     app:startDestination="@id/activity_main">
     <fragment
         android:id="@+id/activity_main"
-        android:name="com.example.odoo_pos_system.activity_main"
+        android:name="com.example.odoo_pos_system.home.ui.fragment_main"
         android:label="fragment_activity_main"
-        tools:layout="@layout/fragment_activity_main" >
+        tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_activity_main_to_activity_profile"
             app:destination="@id/activity_profile" />
@@ -20,7 +20,7 @@
         android:id="@+id/activity_profile"
         android:name="com.example.odoo_pos_system.activity_profile"
         android:label="fragment_activity_profile"
-        tools:layout="@layout/fragment_activity_profile" >
+        tools:layout="@layout/fragment_profile" >
         <action
             android:id="@+id/action_activity_profile_to_activity_main"
             app:destination="@id/activity_main" />
@@ -30,9 +30,9 @@
     </fragment>
     <fragment
         android:id="@+id/activity_category"
-        android:name="com.example.odoo_pos_system.activity_category"
+        android:name="com.example.odoo_pos_system.category.ui.fragment_category"
         android:label="fragment_activity_category"
-        tools:layout="@layout/fragment_activity_category" >
+        tools:layout="@layout/fragment_category" >
         <action
             android:id="@+id/action_activity_category_to_activity_main"
             app:destination="@id/activity_main" />

@@ -9,12 +9,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.odoo_pos_system.MainActivity;
+import com.example.odoo_pos_system.home.ui.MainActivity;
 import com.example.odoo_pos_system.R;
 import com.example.odoo_pos_system.authentication.model.Authentication;
 import com.example.odoo_pos_system.authentication.model.AuthenticationData;
 import com.example.odoo_pos_system.authentication.services.POSTAuthentication;
-import com.example.odoo_pos_system.profile.ui.ProfileActivity;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -70,6 +69,17 @@ public class LoginActivity extends AppCompatActivity {
                         intent.putExtra("uid", userData.result.uid);
                         intent.putExtra("name", userData.result.name);
                         intent.putExtra("username", userData.result.username);
+
+                        /*Bundle bundle = new Bundle();
+                        bundle.putString("name", "Enzo");
+                        bundle.putString("username", "Enzo Livelli");
+                        bundle.putString("db", "Odoo 14");
+
+                        activity_profile fragment = new activity_profile();
+                        fragment.setArguments(bundle);
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .add(R.id.login_fragment, fragment).commit();*/
 
                         startActivity(intent);
 
